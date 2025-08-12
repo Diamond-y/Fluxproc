@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>488</width>
+    <height>71</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>7</x>
+      <y>9</y>
+      <width>461</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>488</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuLoad_Data">
+    <property name="title">
+     <string>Load Data</string>
+    </property>
+    <addaction name="actionload_EddyPro"/>
+   </widget>
+   <widget class="QMenu" name="menuGapFill">
+    <property name="title">
+     <string>GapFill</string>
+    </property>
+    <addaction name="actionXGboost"/>
+    <addaction name="actionRandom_Forest"/>
+   </widget>
+   <widget class="QMenu" name="menuU_Threshold_Estimate">
+    <property name="title">
+     <string>U* Threshold Estimate</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuPartitioning">
+    <property name="title">
+     <string>Partitioning</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuQuality_Control">
+    <property name="title">
+     <string>Quality Control</string>
+    </property>
+   </widget>
+   <addaction name="menuLoad_Data"/>
+   <addaction name="menuGapFill"/>
+   <addaction name="menuQuality_Control"/>
+   <addaction name="menuU_Threshold_Estimate"/>
+   <addaction name="menuPartitioning"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionopen_file">
+   <property name="text">
+    <string>open file</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="text">
+    <string>save</string>
+   </property>
+  </action>
+  <action name="actionload_EddyPro">
+   <property name="text">
+    <string>load EddyPro</string>
+   </property>
+  </action>
+  <action name="actionXGboost">
+   <property name="text">
+    <string>XGboost</string>
+   </property>
+  </action>
+  <action name="actionRandom_Forest">
+   <property name="text">
+    <string>Random Forest</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
